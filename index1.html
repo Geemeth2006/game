@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link rel="icon" href="logo.PNG">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class ="body" id="body" onkeydown="key(event);" >
+    <div id="d" class="d">
+        
+        <img src="Idle (1).png" class="i" id="i">
+        <img src="bullet.png" class = "bullet" id="bullet">
+        
+        <div class="scoreboard" id="scoreboard">
+            <p class="score" id="score">S : 0</p>
+        </div>
+        
+        
+    </div>
+
+    <div class="start" id="start" >
+        <button class="btn" onclick="st();" id="btn">PLAY</button>
+        <div class="w" id="p">WELCOME</div>
+        <p class="game" id="p">To Jungle the Running Game</p>
+        <p id="p">To Start : Enter<br>
+        To Jump : Up Arrow<br>
+        To Down : Down Arrow<br>
+        To Shoot : Space Bar</p>
+        
+    </div>
+
+    <div class="end" id="end">
+        <button onclick="ne();" class="btn2">New Game</button>
+        <div class="lo">Game Over</div>
+        <div id="lastscore" class="lastscore">Your Score is</div>
+        <div class="y" id="y">You Are Killed By</div>
+        <div class="y">Play Again</div>
+    </div>
+    
+    <div class="win" id="win">
+        <img class="won1" src="won.png">
+        <img class="won2"src="won.png">
+
+        <button onclick="ne();" class="btn2">New Game</button>
+        <div class="lo">YOU ARE WON !</div><br><br><br >
+        <br>
+        <div class="y">Are You Like toPlay Again</div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
